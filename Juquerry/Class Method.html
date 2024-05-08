@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLASS Method</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #box{
+            padding: 20px;
+            border: 2px solid red;
+        }
+        .first{
+            background-color: pink;
+        }
+        .second{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuerry Get Method</h1>
+    <div id="box" class="box1">
+        <h2>text 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing <span> A, delectus! </span></p>
+    </div>
+    <br>
+    <button  id="Addbutton">Addclass</button>
+    <button  id="Removebutton">Removeclass</button>
+    <button  id="Togglebutton">ToggleClass</button>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // addclass
+        $(document).ready(function () {
+        $("#Addbutton").click(function(){
+            $("#box,h2").addClass("first second");
+        });
+        // Removeclass
+        $("#Removebutton").click(function(){
+            $("#box,h2").removeClass(" second");
+        });
+        $("#Togglebutton").click(function(){
+            $("#box").toggleClass("second");
+        });
+    
+      });
+    </script>
+  </html>

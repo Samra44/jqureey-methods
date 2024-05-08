@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeMethod</title>
+</head>
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+    }
+
+
+</style>
+<body>
+    <div class="box">
+        <h2>Text Box</h2>
+        <p class="para1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga corrupti sequi, praesentium ducimus rem impedit explicabo fugit doloribus asperiores cumque.
+        </p>
+    </div>
+    <br><br>
+    <button id="removeBtn">RemoveButton</button>
+    <button id="emptyBtn">EmptyBTn</button>
+    <button id="slideup">Slideup</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#removeBtn").click(function(){
+            $(".box ").remove()
+        });
+     
+        $("#emptyBtn").click(function(){
+            $(".box").empty()
+        });
+      
+
+    });
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Method</title>
+</head>
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+     
+        background-color: aqua;
+       
+    }
+    .box1{
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+        
+     
+        background-color: rgb(206, 236, 106);
+    }
+
+
+</style>
+<body>
+    <div class="box">
+        <h2>Text Box</h2>
+        <p class="para1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga corrupti sequi, praesentium ducimus rem impedit explicabo fugit doloribus asperiores cumque.
+        </p>
+    </div>
+    <div class="box1">
+
+    </div>
+    <br><br>
+    
+    <button id="cloneBtn">CloneBtn</button>
+  
+  
+  
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#cloneBtn").click(function(){
+            $(".box h2 ").clone().prependTo(".box1");
+            $(".box p ").clone().appendTo(".box1");
+        });
+     
+       
+        
+
+    });
+</script>
+</html>

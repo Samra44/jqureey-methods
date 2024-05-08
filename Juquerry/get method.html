@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuerry Get Method </title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #box{
+            background-color: lightseagreen;
+            padding: 20px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuerry Get Method</h1>
+    <div id="box" class="box1">
+        <h2>text 2</h2>
+        <p>Lore A, delectm, ipsum dolor sit amet consectetur adipisicing <span>us! </span></p>
+    </div>
+</body>
+<!-- <script src=""></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+    var a=$("#box").html();
+       console.log(a);
+    var a =$("body").html();
+       console.log(a);
+    var a =$("#box p").html();
+       console.log(a);
+
+
+    // Text()Method
+    // var a =$("#box p").text();
+    //    console.log(a);
+    //  var a =$("#box ").text();
+    //    console.log(a);
+
+    // Attr()Method
+    //  var a =$("#box").attr("class");
+    //    console.log(a);
+
+    });
+</script>
+</html>

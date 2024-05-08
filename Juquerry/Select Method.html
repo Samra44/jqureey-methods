@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Method</title>
+</head>
+<body>
+    <!-- Selector id/Class,Group Selector -->
+    <!-- <p class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eaque?</p>
+    <p id="b3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis iste totam est molestiae atque natus enim fugit cupiditate aut animi?</p>
+    <h1>hello jquery</h1>
+    <p class="c2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, dolores!</p> -->
+    <!-- <input type="button" value="click" id="Btn1"> -->
+    <!-- <input type="button" value="click" id="BTn">
+    
+    <ul class="list1">
+        <li>Pakistan</li>
+        <li>India</li>
+        <li>Srilanka</li>
+        <li>Canada</li>
+        <li>UK</li>
+    </ul>  
+    <p>Lorem ipsum dolor sit.</p>  -->
+  
+    <!-- <input type="button" value="clik me" id="clickbtn"> -->
+    <!-- <ul class="list1">
+        <li>Pakistan</li>
+        <li>India</li>
+        <li>Srilanka</li>
+        <li>Canada</li>
+        <li>UK</li>
+    </ul> -->
+    <ul id="list1" >
+        <li>Pakistan</li>
+        <li>India</li>
+        <li>Srilanka</li>
+        <li>Canada</li>
+        <li>UK</li>
+    </ul>
+    <input type="button" value="clik" id="Btn">
+</body>
+<!-- cdn -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        $("#Btn1").click(function(){
+            // id
+            $("#b3").css("color","red");
+        });
+    });
+            $("#b3").css({"color":"red" ,"font-size":"30px"});
+            // class
+            // $(".c1").css("font-size","30px");
+            // Group Selector
+            // $("p ,h1").css("background","pink");
+            // alert("Hello Coder")
+
+
+
+        
+            $("#list1 li").css("font-size","30px");
+
+            $(".list1 li").css("font-size","30px"); //gt grater then
+            $("#list1 li:gt(2)").css("color","red");
+           
+            $("#list1 li:eq(3)").css("font-size","30px");
+
+// Advance Selector
+
+     $(".c1").css("background","yellow");
+            $("p:first").css("font-family","cooper");
+            $("ul li:even").css("font-size","30px");
+            $("ul li:odd").css("font-size","30px");
+            $(".list1 li:last-child").css("font-size","30px");
+            $(".list1 li:lt(2)").css("font-size","30px"); //lt mean less then
+            $(".list1 li:gt(2)").css("font-size","30px");
+</script>
+</html>

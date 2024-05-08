@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Show Method</title>
+</head>
+<body>
+   <h1>welcome to javascript</h1>
+   <h2>welcome to JQuerry</h2>
+   <input type="button" value="hidebtn" id="hidebtn">
+   <input type="button" value="showbtn" id="showbtn">
+   <input type="button" value="togglebtn" id="togglebtn">
+   
+</body>
+<!-- <script src=""></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+//    $(document).ready(function(){
+//     $("#hidebtn").click(function(){
+//         $("h2 ,h1").hide(3000);
+      
+//         });
+//     });
+//     $("#showbtn").click(function(){
+//         $("h1 ,h2").show(2000);
+//     });
+//     $("#togglebtn").click(function(){
+//         $("h1,h2").toggle(3000);
+//     });
+   
+
+$(document).ready(function(){
+    $("#hidebtn").click(function(){
+        $("h2 ,h1").hide(3000);
+        });
+
+    $("#showbtn").click(function(){
+        $("h1 ,h2").show(2000);
+    });
+
+    $("#togglebtn").click(function(){
+        $("h1,h2").toggle(3000);
+    });
+    });
+   
+   
+   
+</script>
+</html>
